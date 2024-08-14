@@ -1,0 +1,269 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: sans-serif
+}
+
+.container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+header,
+main,
+footer {
+    width: 100%;
+    max-width: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+.imgg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+img {
+    max-height: 70%;
+}
+
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 160px;
+    position: relative;
+}
+
+.navbar nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.navbar li a {
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+@media (max-width: 768px) {
+    .navbar nav ul {
+        display: none;
+        flex-direction: column;
+        width: 102%;
+        background-color: #333;
+        position: absolute;
+        top: 9px;
+        left: 0;
+        padding: 0;
+    }
+
+    .navbar nav ul.active {
+        display: flex;
+    }
+
+    .navbar nav ul li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+}
+
+.hero {
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 5rem 1rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.hero .btn-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    /* Espaço entre os botões */
+}
+
+.hero .btn {
+    background-color: #ffcc00;
+    color: black;
+    padding: 1rem 2rem;
+    margin: 0.5rem 0;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+    width: 200px;
+    /* Defina a largura dos botões conforme necessário */
+}
+
+.intro,
+.services-highlights,
+.testimonials {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.service {
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 5px;
+}
+
+.contact{
+justify-content: center;
+align-items: center;
+display: flex ;
+width: 100%;
+height: 100%;
+margin-top: 30px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+footer .contact-info,
+footer .social-media {
+    margin-bottom: 1rem;
+}
+.button-container {
+    display: flex;
+    gap: 10px;
+    height: 50px;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 25px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.whatsapp {
+    background-color: #25D366;
+}
+
+.whatsapp:hover {
+    background-color: #1ebe56;
+}
+
+.call {
+    background-color: #00ADEF;
+}
+
+.call:hover {
+    background-color: #009ad7;
+}
+
+.button i {
+    margin-right: 10px;
+}
+
+footer .social-media a {
+    color: white;
+    margin: 0 0.5rem;
+    text-decoration: none;
+}
+
+.conato {
+    text-align: center;
+}
+
+.form {
+    width: 300px;
+    /* Defina uma largura para a form */
+    margin: 0 auto;
+    /* Centraliza a form na página */
+    text-align: justify;
+}
+
+.form label {
+    display: block;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+.form input {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.map {
+    text-align: center;
+    padding: 30px;
+}
+
+* {
+    box-sizing: border-box;
+}
