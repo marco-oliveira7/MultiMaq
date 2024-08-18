@@ -1,9 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
 body,
 html {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
     font-family: sans-serif;
+    background-color: rgb(233, 233, 233);
+    font-family: "Montserrat", "cursive" ;
 }
 
 .container {
@@ -29,8 +37,7 @@ main {
     flex: 1;
 }
 
-
-.imgg {
+.imgg{
     position: absolute;
     top: 0;
     left: 0;
@@ -82,35 +89,6 @@ img {
     transition: 0.4s;
 }
 
-@media (max-width: 700px) {
-    .navbar img{
-        width: 50%;
-    }
-    .navbar nav ul {
-        display: none;
-        flex-direction: column;
-        width: 102%;
-        background-color: #333;
-        position: absolute;
-        top: 9px;
-        left: 0;
-        padding: 0;
-    }
-
-    .navbar nav ul.active {
-        display: flex;
-    }
-    .navbar nav ul li {
-        margin: 8px 0;
-        text-align: center;
-    }
-
-    .menu-toggle {
-        display: flex;
-        z-index: 999;
-    }
-}
-
 .hero {
     background: url("hero-image.jpg") no-repeat center center/cover;
     color: rgb(0, 0, 0);
@@ -133,7 +111,6 @@ img {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    /* Espaço entre os botões */
 }
 
 .hero .btn {
@@ -146,7 +123,6 @@ img {
     border-radius: 5px;
     text-align: center;
     width: 200px;
-    /* Defina a largura dos botões conforme necessário */
 }
 
 .intro,
@@ -163,27 +139,41 @@ img {
     margin: 1rem;
     border-radius: 5px;
 }
+.contact p{
+    color: #009ad7;
+    position: absolute;
+    top: 0;
+    font-weight: 600;
+    
+}
+.underline{
+    display: inline-block;
+    position: relative;
+}
 
+.underline::after{
+    content: ' ';
+    position: absolute;
+    background-color: #009ad7;
+    right: 30px;
+    bottom: -6px;
+    width: 60%;
+    height: 2.5px;
+}
 .contact {
     justify-content: center;
     align-items: center;
     display: flex;
-    width: 100%;
-    height: 100%;
-    margin-top: 30px;
+    width: 70%;
+    height: 300px;
+    margin: auto;
+    margin-top: 50px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.048);
+    position: relative;
 }
 
-footer {
-    background-color: #333;
-    color: white;
-    padding: 1rem;
-    text-align: center;
-}
-
-footer .contact-info,
-footer .social-media {
-    margin-bottom: 1rem;
-}
 .button-container {
     display: flex;
     gap: 10px;
@@ -228,15 +218,10 @@ footer .social-media a {
     text-decoration: none;
 }
 
-.conato {
-    text-align: center;
-}
 
 .form {
     width: 300px;
-    /* Defina uma largura para a form */
     margin: 0 auto;
-    /* Centraliza a form na página */
     text-align: justify;
 }
 
@@ -263,11 +248,47 @@ footer .social-media a {
     cursor: pointer;
 }
 
-.map {
+
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
     text-align: center;
-    padding: 30px;
 }
 
-* {
-    box-sizing: border-box;
+footer .contact-info,
+footer .social-media {
+    margin-bottom: 1rem;
 }
+
+@media (max-width: 700px) {
+    .navbar img {
+        width: 50%;
+    }
+    .navbar nav ul {
+        display: none;
+        flex-direction: column;
+        width: 102%;
+        background-color: #333;
+        position: absolute;
+        top: 9px;
+        left: 0;
+        padding: 0;
+    }
+
+    .navbar nav ul.active {
+        display: flex;
+    }
+    .navbar nav ul li {
+        margin: 8px 0;
+        text-align: center;
+    }
+
+    .menu-toggle {
+        display: flex;
+        z-index: 999;
+    }
+
+}
+
