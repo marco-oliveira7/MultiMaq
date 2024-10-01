@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
     box-sizing: border-box;
@@ -11,7 +11,7 @@ html {
     overflow-x: hidden;
     font-family: sans-serif;
     background-color: rgb(233, 233, 233);
-    font-family: "Montserrat", "cursive" ;
+    font-family: "Montserrat", "cursive";
 }
 
 .container {
@@ -37,7 +37,7 @@ main {
     flex: 1;
 }
 
-.imgg{
+.imgg {
     position: absolute;
     top: 0;
     left: 0;
@@ -47,7 +47,7 @@ img {
     max-height: 70%;
 }
 
-.navbar {
+header {
     background-color: #333;
     color: white;
     padding: 10px 20px;
@@ -58,18 +58,34 @@ img {
     position: relative;
 }
 
-.navbar nav ul {
+header nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
 }
 
-.navbar ul li {
+header ul li {
     margin-left: 20px;
+    transition: all 0.3s ease-in-out;
+    position: relative;
 }
 
-.navbar li a {
+header ul li:hover:after {
+    content: "";
+    background-color: #fff;
+    position: absolute;
+    width: 80%;
+    height: 1px;
+    top: 28px;
+    right: 6.5px;
+}
+
+header ul li:hover {
+    translate: -5px -5px;
+}
+
+header li a {
     font-size: 1.2rem;
     color: white;
     text-decoration: none;
@@ -113,6 +129,14 @@ img {
     gap: 1rem;
 }
 
+.btn-container a {
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-container a:hover {
+    translate: -0px -5px;
+}
+
 .hero .btn {
     background-color: #ffcc00;
     color: black;
@@ -131,6 +155,31 @@ img {
     padding: 2rem 1rem;
     text-align: center;
 }
+.cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+    flex: 1;
+}
+
+.card {
+    text-align: center;
+    width: 400px;
+    background-color: #fff;
+    border-radius: 15px;
+    height: 300px;
+}
+
+.imagem {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: #8ba2ac;
+}
+
+.imagem img {
+    width: 200px;
+}
 
 .service {
     text-align: center;
@@ -139,20 +188,28 @@ img {
     margin: 1rem;
     border-radius: 5px;
 }
-.contact p{
+
+.services{
+    text-align: justify;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 5px;
+    text-indent: 20px;
+    line-height: 40px;
+}
+.contact p {
     color: #009ad7;
     position: absolute;
     top: 0;
     font-weight: 600;
-    
 }
-.underline{
+.underline {
     display: inline-block;
     position: relative;
 }
 
-.underline::after{
-    content: ' ';
+.underline::after {
+    content: " ";
     position: absolute;
     background-color: #009ad7;
     right: 30px;
@@ -218,7 +275,6 @@ footer .social-media a {
     text-decoration: none;
 }
 
-
 .form {
     width: 300px;
     margin: 0 auto;
@@ -247,8 +303,6 @@ footer .social-media a {
     border: none;
     cursor: pointer;
 }
-
-
 
 footer {
     background-color: #333;
@@ -289,6 +343,4 @@ footer .social-media {
         display: flex;
         z-index: 999;
     }
-
 }
-
