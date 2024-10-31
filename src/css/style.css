@@ -242,6 +242,7 @@ header li a {
 .button {
     display: flex;
     align-items: center;
+    justify-content: center;
     padding: 10px 20px;
     border-radius: 25px;
     color: white;
@@ -357,4 +358,15 @@ footer .social-media {
 
     }
 
+}
+
+@media (width <= 600px){
+    .button-container {
+        display: flex;
+        gap: 10px;
+        height: 50px;
+        flex-flow: row wrap;
+        justify-content: center;
+        min-width: 100px;
+    }
 }
