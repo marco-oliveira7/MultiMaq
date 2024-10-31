@@ -169,6 +169,7 @@ header li a {
     background-color: #fff;
     border-radius: 15px;
     height: 300px;
+    margin: 10px;
 }
 
 .imagem {
@@ -193,9 +194,10 @@ header li a {
     text-align: justify;
     padding: 1rem;
     margin: 1rem;
-    border-radius: 5px;
+    border-radius: 10px;
     text-indent: 20px;
     line-height: 40px;
+    background-color: #fff;
 }
 .contact p {
     color: #009ad7;
@@ -343,4 +345,16 @@ footer .social-media {
         display: flex;
         z-index: 999;
     }
+
+    header ul li:hover:after {
+        content: "";
+        background-color: #fff;
+        position: absolute;
+        width: 20%;
+        height: 1px;
+        top: 28px;
+        right: 40%;
+
+    }
+
 }
