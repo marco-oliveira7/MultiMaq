@@ -1,80 +1,131 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Serviços de Reparação de Máquinas de Lavar</title>
-    <link rel="stylesheet" href="./src/css/style.css">
-    <meta charset="UTF-8">
-    <meta name="description" content="Free Web tutorials">
-    <meta name="keywords" content="HTML, CSS, JavaScript">
-    <meta name="author" content="Marco Antônio">
-</head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="description" content="Free Web tutorials" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="Marco Antônio" />
+  </head>
 
-<body>
+  <body>
     <header class="navbar">
-        <img src="./src/img/logo2.png" alt="logo">
-        <nav>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="./pages/services.html">Serviços</a></li>
-                <li><a href="./pages/testimonials.html">Avaliações</a></li>
-                <li><a href="./pages/contact.html">Contato</a></li>
-            </ul>
-        </nav>
-        <div class="menu-toggle" id="menu-toggle">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </div>
+      <img src="./src/img/logo2.png" alt="logo" />
+      <div class="menu-toggle" id="menu-toggle">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
     </header>
 
     <main>
-        <section class="hero">
-            <h1>Serviços de Reparação de Máquinas de Lavar</h1>
-            <p>Rápido, Confiável e Acessível</p>
-            <div class="btn-container">
-                <a href="./pages/contact.html" class="btn">Agendar Serviço</a>
-                <a href="tel:+5511999999999" class="btn">Ligue Agora</a>
+      <section class="hero">
+        <h1>Serviços de Reparação de Máquinas de Lavar</h1>
+        <p>Rápido, Confiável e Acessível</p>
+        <div class="btn-container">
+          <a href="./pages/contact.html" class="btn">Agendar Serviço</a>
+          <a href="tel:+5511999999999" class="btn">Ligue Agora</a>
+        </div>
+      </section>
+
+      <section class="intro">
+        <h2>Bem-vindo ao Multimaq</h2>
+        <p>
+          Seu parceiro de confiança para todas as necessidades de reparo de
+          máquinas de lavar. Oferecemos serviços rápidos e eficientes para
+          garantir que sua máquina de lavar esteja funcionando perfeitamente.
+        </p>
+      </section>
+
+      <section class="services">
+        <h1>Nossos Serviços</h1>
+        <article>
+          <h2>Diagnóstico e Reparo</h2>
+          <p>
+            Nossos técnicos qualificados realizam diagnósticos completos para
+            identificar e corrigir qualquer problema com sua máquina de lavar.
+            Trabalhamos com todas as principais marcas e modelos.
+          </p>
+        </article>
+        <article>
+          <h2>Manutenção</h2>
+          <p>
+            A manutenção regular pode prolongar a vida útil da sua máquina de
+            lavar e prevenir reparos caros. Nossos serviços de manutenção
+            incluem limpeza, inspeções e substituições de peças.
+          </p>
+        </article>
+      </section>
+      <section class="cards">
+        <div class="card" id="card-1">
+          <div class="imagem">
+            <img src="../src/img/icone.png" alt="" />
+          </div>
+          <p>
+            Serviço fantástico! Minha máquina de lavar foi consertada
+            rapidamente." - Jane D.
+          </p>
+        </div>
+        <div class="card" id="card-2">
+          <div class="imagem">
+            <img src="../src/img/icone.png" alt="" />
+          </div>
+          <p>"Recomendo muito. Profissional e acessível." - Mark S.</p>
+        </div>
+        <div class="card" id="card-3">
+          <div class="imagem">
+            <img src="../src/img/icone.png" alt="" />
+          </div>
+          <p>
+            "Ótimo custo-benefício. Meu ponto de referência para qualquer
+            problema de máquina de lavar." - Emily R.
+          </p>
+        </div>
+      </section>
+      <section class="contact">
+        <p class="underline"><span>Solicitar Orçamento</span></p>
+        <div class="button-container">
+          <a href="https://wa.me/your-number" class="button whatsapp">
+            <i class="fab fa-whatsapp"></i> Chamar no WhatsApp
+          </a>
+          <a href="tel:your-number" class="button call">
+            <i class="fas fa-phone"></i> Ligar Agora
+          </a>
+        </div>
+        <form action="dados.html" method="post" id="form">
+            <div class="inputs">
+                <label for="name">Nome:</label>
+                <input type="text" id="name">
             </div>
-        </section>
-
-        <section class="intro">
-            <h2>Bem-vindo ao Multimaq</h2>
-            <p>Seu parceiro de confiança para todas as necessidades de reparo de máquinas de lavar. Oferecemos serviços
-                rápidos e eficientes para garantir que sua máquina de lavar esteja funcionando perfeitamente.</p>
-        </section>
-
-        <div class="service">
-            <h3>Diagnóstico e Reparo</h3>
-            <p>Serviços de diagnóstico e reparo abrangentes para todas as marcas de máquinas de lavar.</p>
-        </div>
-        <div class="service">
-            <h3>Manutenção</h3>
-            <p>Manutenção regular para manter sua máquina de lavar em ótimo estado.</p>
-        </div>
-        <div class="service">
-            <h3>Serviços de Emergência</h3>
-            <p>Serviços de reparo de emergência 24/7 para problemas urgentes.</p>
-        </div>
-        </section>
-
+            <div class="inputs">
+                <label for="email">Email:</label>
+                <input type="text" id="email">
+            </div>
+            <div class="inputs">
+                <label for="tel">Telefone:</label>
+                <input type="text" id="tel">
+            </div>
+            <button type="submit">ENVIAR</button>
+        </form>
+      </section>
     </main>
 
     <footer>
-        <div class="contact-info">
-            <p>Telefone: +55 11 99999-9999</p>
-            <p>Email: contato@empresa.com.br</p>
-            <p>Endereço: Rua Exemplo, 123, São Paulo, SP</p>
-        </div>
-        <div class="social-media">
-            <a href="https://www.facebook.com/" target="_blank">Facebook</a>
-            <a href="https://www.instagram.com/" target="_blank">Instagram</a>
-            <a href="https://web.whatsapp.com/" target="_blank">Whatsapp</a>
-        </div>
+      <div class="contact-info">
+        <p>Telefone: +55 11 99999-9999</p>
+        <p>Email: contato@empresa.com.br</p>
+        <p>Endereço: Rua Exemplo, 123, São Paulo, SP</p>
+      </div>
+      <div class="social-media">
+        <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+        <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+        <a href="https://web.whatsapp.com/" target="_blank">Whatsapp</a>
+      </div>
     </footer>
     <script src="../src/javascript/scripts.js"></script>
-</body>
-
+  </body>
 </html>
